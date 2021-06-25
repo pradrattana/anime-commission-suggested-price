@@ -11,8 +11,8 @@ def img_price(o):
     for i, row in df.iterrows():
         if row[0]==os.path.basename(o): return row[2]
 
-MODEL_IMG_URL = "https://github.com/pradrattana/anime_price_predict/raw/main/models/img_reg.pkl"
-MODEL_CSV_URL = "https://github.com/pradrattana/anime_price_predict/raw/main/models/csv_reg.pkl"
+MODEL_IMG_URL = "https://github.com/pradrattana/anime_commission_suggested_price/raw/main/models/img_reg.pkl"
+MODEL_CSV_URL = "https://github.com/pradrattana/anime_commission_suggested_price/raw/main/models/csv_reg.pkl"
 urllib.request.urlretrieve(MODEL_IMG_URL, "img_reg.pkl")
 urllib.request.urlretrieve(MODEL_CSV_URL, "csv_reg.pkl")
 learn_img = load_learner('img_reg.pkl', cpu=True)
