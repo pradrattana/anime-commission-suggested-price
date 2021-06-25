@@ -1,4 +1,4 @@
-  from fastai.tabular.all import *
+from fastai.tabular.all import *
 from fastai.vision.all import *
 import os
 import glob
