@@ -28,9 +28,8 @@ valid_images = glob.glob('test/*')
 if option == 'Use a validation image':
     st.sidebar.write('### Select a validation image')
     fname = st.sidebar.selectbox('', valid_images)
-    st.write(fname)
     df = pd.read_csv('test.csv')
-    df = df[df.path==fname.lstrip('test\\')]
+    df = df[df.path==fname.lstrip('test/')]
 else:
     st.sidebar.write('### Select an image to upload')
     fname = st.sidebar.file_uploader('',
