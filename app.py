@@ -29,7 +29,7 @@ if option == 'Use a validation image':
     st.sidebar.write('### Select a validation image')
     fname = st.sidebar.selectbox('', valid_images)
     df = pd.read_csv('test.csv')
-    df = df[df.path==fname.lstrip('test/')]
+    df = df[df.path==fname.lstrip('test/')].drop(columns='path')
 else:
     st.sidebar.write('### Select an image to upload')
     fname = st.sidebar.file_uploader('',
@@ -53,6 +53,8 @@ else:
         print(df)
     if fname is None:
         fname = valid_images[0]
+        df = pd.read_csv('test.csv')
+        df = df[df.path==fname.lstrip('test/')].drop(columns='path')
 
 ##################################
 
