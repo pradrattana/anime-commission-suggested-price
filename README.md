@@ -1,8 +1,8 @@
-# anime_commission_suggested_price
+# Anime Commission Suggested Price
 
 Suggested Price for Anime Commission
 
-Web scraping code: [web_scraping.git](https://github.com/pradrattana/web_scraping.git)
+Web scraping code: [web_scraping.git](https://github.com/pradrattana/artistsnclients-scraping.git)
 
 Training notebook: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pradrattana/anime_commission_suggested_price/blob/main/anime_price_reg.ipynb)
 
